@@ -26,24 +26,24 @@
   <img src="background.png" alt="Background">
 </div>
 <body>
-    <script type="text/javascript">
-        function initEmbeddedMessaging() {
-            try {
-                agentforce_messaging.settings.language = 'en'; // For example, enter 'en' or 'en-US'
-                agentforce_messaging.settings.devMode = true;
-                agentforce_messaging.init(
-                   '00DSG00000XTZU1',
-				   'opendeploy',
-    				'https://orgfarm-e336f13cc8.test1.my.pc-rnd.site.com/ESWopendeploy1755456221108',
-    				{
-    					scrt2URL: 'https://orgfarm-e336f13cc8.test1.my.pc-rnd.salesforce-scrt.com'
-    				}
-                );
-            } catch (err) {
-                console.error('Error loading Embedded Messaging: ', err);
-            }
-        };
-    </script>
-    <script type="text/javascript" src="https://orgfarm-e336f13cc8.test1.my.pc-rnd.site.com/ESWopendeploy1755456221108/assets/js/init.js" onload="initEmbeddedMessaging()"></script>
+    <script type='text/javascript'>
+	function initEmbeddedMessaging() {
+		try {
+			agentforce_messaging.settings.language = 'en_US'; // For example, enter 'en' or 'en-US'
+
+			agentforce_messaging.init(
+				'00Dxx00Yk0UCqm8',
+				'open_table',
+				'https://orgfarm-4c5a5155d5.my.site-com.h0am1o8vjzf71fn98arj.wa.crm.dev:6101/ESWopentable1755612318885',
+				{
+					scrt2URL: 'http://orgfarm-4c5a5155d5.my.salesforce-scrt-com.h0am1o8vjzf71fn98arj.wa.crm.dev'
+				}
+			);
+		} catch (err) {
+			console.error('Error loading Embedded Messaging: ', err);
+		}
+	};
+</script>
+<script type='text/javascript' src='https://orgfarm-4c5a5155d5.my.site-com.h0am1o8vjzf71fn98arj.wa.crm.dev:6101/ESWopentable1755612318885/assets/js/init.js' onload='initEmbeddedMessaging()'></script>
 </body>
 </html>
